@@ -1,0 +1,32 @@
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+    z-index: 2000;
+    position: fixed;
+    height: 60px;
+    width: 100px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+.pace-running .pace-active {
+    border: 16px solid #e6e6e6;
+    border-top: 16px solid var(--codechime-loader-loader-color);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: codechimeLoaderSpinner 2s linear infinite;
+}
+
+@keyframes codechimeLoaderSpinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
